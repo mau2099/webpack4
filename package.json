@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build" : "webpack --mode production"
+    "build:byCLI": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "build:byWebpackConfig" : "webpack --mode production", 
+    "build:external" : "webpack --config ./external/webpack_external.config.js --mode production"
   },
   "keywords": [],
   "author": "@mau2099.dev",
