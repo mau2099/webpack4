@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build:byCLI": "webpack --entry ./index.js --output ./bundle.js --mode development",
-    "build:byWebpackConfig" : "webpack --mode production", 
-    "build:external" : "webpack --config ./external/webpack_external.config.js --mode production",
-    "build:multi" : "webpack --config ./multi/webpack.config.js --mode production"
+    "build:byWebpackConfig": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack_external.config.js --mode production",
+    "build:multi": "webpack --config ./multi/webpack.config.js --mode production",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js --mode development"
   },
   "keywords": [],
   "author": "@mau2099.dev",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "3.5.3",
+    "style-loader": "1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
