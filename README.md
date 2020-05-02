@@ -14,4 +14,13 @@ i = install
 ```
 ___
 
+### loaders 
+
+Los loaders sirven para que el codigo que inyectamos en js como css, imagenes, no se rompa
+
+### plugins 
+
+___
+
+
 @mau2099 🐧
