@@ -18,8 +18,12 @@ ___
 
 Los loaders sirven para que el codigo que inyectamos en js como css, imagenes, no se rompa
 
+* css-loader    -> Se encarga que no tenga información 
+* style-loader -> es el que inyecta el css 
+
 ### plugins 
 
+Sirven para crear automaticamente un archivo de CSS y un archivo de JS
 ___
 
 

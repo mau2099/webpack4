@@ -9,7 +9,8 @@
     "build:external": "webpack --config ./external/webpack_external.config.js --mode production",
     "build:multi": "webpack --config ./multi/webpack.config.js --mode production",
     "build:css": "webpack --config ./css-style-loader/webpack.config.js --mode development",
-    "build:plugins": "webpack --config ./plugins/webpack.config.js --mode production"
+    "build:plugins": "webpack --config ./plugins/webpack.config.js --mode production",
+    "build:dev": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js  --mode production"
   },
   "keywords": [],
   "author": "@mau2099.dev",
@@ -21,6 +22,7 @@
     "mini-css-extract-plugin": "0.9.0",
     "style-loader": "1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "3.10.3"
   }
 }
