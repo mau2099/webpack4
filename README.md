@@ -25,7 +25,9 @@ Los loaders sirven para que el codigo que inyectamos en js como css, imagenes, n
 ### plugins 
 
 Sirven para crear automaticamente un archivo de CSS y un archivo de JS
-___
 
+### Advanced
+* [use of optimization](https://webpack.js.org/plugins/split-chunks-plugin/)
+___
 
 @mau2099 🐧
