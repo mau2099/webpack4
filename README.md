@@ -20,6 +20,7 @@ Los loaders sirven para que el codigo que inyectamos en js como css, imagenes, n
 
 * css-loader    -> Se encarga que no tenga información 
 * style-loader -> es el que inyecta el css 
+* url-loader | file-loader -> es para dar soporte a imagenes, videos y fuentes
 
 ### plugins 
 

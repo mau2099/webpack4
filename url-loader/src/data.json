@@ -1,0 +1,7 @@
+{
+  "loaders": [
+    { "name": "style-loader", "id": 1 },
+    { "name": "css-loader", "id": 2 },
+    { "name": "style-loader", "id": 3 }
+  ]
+}
