@@ -10,28 +10,36 @@ module.exports = {
   },
   devServer: {
     hot: true,
+    open: true,
+    port: 9000,
   },
   module: {
     rules: [
       {
+        test: /\.(js|jsx)$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/,
         use: [
-          // 'style-loader',
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          'style-loader',
+          // {
+          //   loader: MiniCssExtractPlugin.loader,
+          // },
           'css-loader',
         ],
-      },
+      }
     ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin({}),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'New title in HTML from webpack',
+      title: 'Babel folder',
+      template: path.resolve(__dirname, 'index.html')
     }),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: 'css/[name].css',
+    // }),
   ],
 };

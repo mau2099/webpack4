@@ -10,6 +10,8 @@ module.exports = {
   },
   devServer: {
     hot: true,
+    open: true,
+    port: 9000,
   },
   module: {
     rules: [
@@ -23,12 +25,17 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.js$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin({}),
     new HtmlWebpackPlugin({
-      title: 'New title in HTML from webpack',
+      title: 'Babel folder',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
