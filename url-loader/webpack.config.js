@@ -11,7 +11,7 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
-    port: 9000,
+    // port: 9000,
   },
   module: {
     rules: [
@@ -44,7 +44,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Babel folder',
+      title: 'ulr folder',
       template: path.resolve(__dirname, 'index.html'),
     }),
     // new MiniCssExtractPlugin({
